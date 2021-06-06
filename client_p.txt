@@ -1,0 +1,18 @@
+ng new client --routing
+y
+css
+
+ng g c components/principal
+
+ng g c components/persona
+ng g c components/persona-list
+ng g c components/persona-edit
+
+agregar rutas en app-routing
+
+agregar servicio
+
+ng g s services/catalogo
+
+instalar angular material
+ng add @angular/material

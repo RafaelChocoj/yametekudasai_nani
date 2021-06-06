@@ -1,0 +1,38 @@
+<hr> 
+    <h2>Bienvenido, Somos el Grupo</h2>
+    <h4>Reunion de Exalumnos</h4>
+
+<table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+
+
+    <!-- Position Column -->
+    <ng-container matColumnDef="Carnet">
+      <th mat-header-cell *matHeaderCellDef> Carnet </th>
+      <td mat-cell *matCellDef="let element"> {{element.Carnet}} </td>
+    </ng-container>
+  
+    <!-- Name Column -->
+    <ng-container matColumnDef="Apellidos">
+      <th mat-header-cell *matHeaderCellDef> Apellidos </th>
+      <td mat-cell *matCellDef="let element"> {{element.Apellidos}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Nombres">
+        <th mat-header-cell *matHeaderCellDef> Nombres </th>
+        <td mat-cell *matCellDef="let element"> {{element.Nombres}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="Correo">
+        <th mat-header-cell *matHeaderCellDef> Correo </th>
+        <td mat-cell *matCellDef="let element"> {{element.Correo}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="github">
+        <th mat-header-cell *matHeaderCellDef> github </th>
+        <td mat-cell *matCellDef="let element"> {{element.github}} </td>
+    </ng-container>
+  
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+

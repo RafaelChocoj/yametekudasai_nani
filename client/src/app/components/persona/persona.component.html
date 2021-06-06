@@ -1,0 +1,60 @@
+<!--<div class="col-md-4 offset-md-4">-->
+    <div class="col-md-10  offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                Nueva Persona Covid
+            </div>
+            
+          <div class="card-body">
+            <form action="">
+
+                <div class="form-group">
+                    <label class="control-label">
+                        DPI
+                    </label>
+                    <input type="number" name="dpi" [(ngModel)]="dpi" placeholder="dpi" class="form-control" required>
+                  </div>
+        
+                  <div class="form-group">
+                    <label class="control-label">
+                        Edad
+                    </label>
+                    <input type="number" name="age" [(ngModel)]="age" placeholder="age" class="form-control" required>
+                  </div>
+
+              <div class="form-group">
+                <input type="text" name="locations" [(ngModel)]="locations" placeholder="locations" class="form-control" required autofocus>
+              </div>
+    
+              <div class="form-group">
+                <input type="text" name="fullname" [(ngModel)]="fullname" placeholder="fullname" class="form-control" required autofocus>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="vaccine_type" [(ngModel)]="vaccine_type" placeholder="vaccine_type" class="form-control" required autofocus>
+              </div>
+
+ 
+    
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+        
+          <div class="col-md-10  offset-md-2">
+            <div class="card">
+    
+                
+              <div class="card-body">
+        
+                <!--<hr>-->
+                <hr>
+                <button class="btn btn-success btn-block" (click)="savePersonaCovid()">
+                  Guardar
+                </button>
+        
+              </div>
+            </div>
+          </div>
+        

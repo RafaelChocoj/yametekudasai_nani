@@ -1,0 +1,56 @@
+
+ <!--<div class="col-md-4 offset-md-4">-->
+    <div class="col-md-10  offset-md-2">
+        <div class="card">
+            <div class="card-header">
+                Editar Persona Covid
+            </div>
+            
+          <div class="card-body">
+            <form action="">
+            <div class="card-header">
+                dpi:    {{percov_ob.dpi}}
+            </div> 
+
+            <div class="form-group">
+                <label class="control-label">
+                    age
+                </label>
+                <input type="number" name="age" [(ngModel)]="percov_ob.age" placeholder="age" class="form-control" required>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="locations" [(ngModel)]="percov_ob.locations" placeholder="locations" class="form-control" required autofocus>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="fullname" [(ngModel)]="percov_ob.fullname" placeholder="fullname" class="form-control" required autofocus>
+              </div>
+
+              <div class="form-group">
+                <input type="text" name="vaccine_type" [(ngModel)]="percov_ob.vaccine_type" placeholder="vaccine_type" class="form-control" required autofocus>
+              </div>
+    
+    
+            </form>
+          </div>
+        </div>
+      </div>
+      <br>
+    
+    
+      <div class="col-md-10  offset-md-2">
+        <div class="card">
+
+            
+         <div class="card-body">
+
+            <hr>
+            <button class="btn btn-success btn-block" (click)="ActualizarPersonaCovid()">
+                Actualizar Datos
+            </button>
+    
+          </div>
+        </div>
+      </div>
+    
