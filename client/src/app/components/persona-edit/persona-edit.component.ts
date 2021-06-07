@@ -56,7 +56,8 @@ export class PersonaEditComponent implements OnInit {
   .subscribe(
     res => {
       console.log(res);
-      alert(res);
+      //alert(res);
+      alert('Datos actulizados');
       location.reload();
     },
     err => { console.error(err)

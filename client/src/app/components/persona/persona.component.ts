@@ -28,7 +28,8 @@ export class PersonaComponent implements OnInit {
         .subscribe(
           res => {
             console.log(res);
-            alert(res);
+            //alert(res);
+            alert('Dato nuevo creado');
             this.router.navigate(['/personalist']);
           },
           err => { console.error(err)
