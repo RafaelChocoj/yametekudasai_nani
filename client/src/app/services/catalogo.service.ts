@@ -12,7 +12,8 @@ import { Router } from '@angular/router';
 export class CatalogoService {
 
   /*agreago ini*/
-  private URL = 'http://localhost:3000';
+  //private URL = 'http://localhost:3000';
+  private URL = 'http://18.117.146.15:5000';
   /*agreago fin*/
 
   /*agreago ini*/

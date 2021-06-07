@@ -37,7 +37,8 @@ export class PersonaEditComponent implements OnInit {
     this.catalogService.getMyPersonaCovid(idpai_ac)
       .subscribe(
         (res:any)=> {
-        this.percov_ob = res[0];
+          console.log(res.data)
+        this.percov_ob = res.data[0];
         },
         err => {
           console.error(err)

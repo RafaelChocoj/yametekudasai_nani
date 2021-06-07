@@ -33,8 +33,8 @@ export class PersonaListComponent implements OnInit {
   getPersonasCovid() { 
     this.catService.getPersonasCovid()
       .subscribe(
-        res => {
-          this.personacov_list = res;
+        (res:any) => {
+          this.personacov_list = res.data;
           this.dataSource.data = this.personacov_list;
           console.log(this.personacov_list);
         },
@@ -62,7 +62,8 @@ export class PersonaListComponent implements OnInit {
       .subscribe(
         res => {
           //console.log(res);
-          alert(res)
+          //alert(res)
+          alert("dato eliminado")
           location.reload()
         },
         err => {console.error(err)
